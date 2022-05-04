@@ -134,7 +134,8 @@ def openNewWindow():
         if(monthly_hours_sum==0):
             res_str ="you didn't work this month!"
         else:
-            salary =  32*monthly_hours_sum
+            wage = 32
+            salary =  wage*monthly_hours_sum
             salary = round(salary,2)
             res_str = "your salary for this month is: "+str(salary)
         calculated_salary = tk.Text(newRoot,height = 4,width = 20)
